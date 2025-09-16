@@ -21,13 +21,32 @@
   }
   *{box-sizing:border-box}
   html,body{height:100%}
-  body{
-    margin:0;
-    font-family:"Plus Jakarta Sans",Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
-    background:linear-gradient(180deg,#05060a 0%, #07101a 100%);
-    color:#e6eef6;
-    padding:28px;
-  }
+ body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #121212;
+  color: #f0f0f0;
+  line-height: 1.6;
+  padding-top: 80px;
+}
+  header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #1e1e1e;
+  padding: 1rem;
+  text-align: center;
+  z-index: 1000; /* garante que fique na frente */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+header h1 {
+  margin: 0;
+  color: #3a82f7;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.5rem;
+}
   .app{
     display:grid;
     grid-template-columns: 420px 1fr;
